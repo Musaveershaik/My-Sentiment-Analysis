@@ -1,8 +1,6 @@
 {
-  "type": "module",
   "dependencies": {
-    "@xenova/transformers": "^2.15.0",
-    "cors": "^2.8.5",
-    "express": "^4.21.1"
-  }
+    "@xenova/transformers": "^2.x.x"
+  },
+  "type": "module"
 }
