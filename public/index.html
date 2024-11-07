@@ -106,6 +106,19 @@
                 console.error('Error:', error);
             }
         }
+
+        fetch('https://mysentimentanalyzer.netlify.app/.netlify/functions/analyze', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                text: "This is a test message"
+            })
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
     </script>
 </body>
 </html> 
